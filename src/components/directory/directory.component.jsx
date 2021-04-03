@@ -49,6 +49,9 @@ class Directory extends React.Component {
     render() {
         return (
             <div className='directory-menu'>
+
+    {/* to pass other prop instead of writing title = {title} etc , we 
+    can use ... (elipses) */}
                 {this.state.sections.map(({id, ...otherSectionProps}) => (
                     <MenuItem key={id} {...otherSectionProps} />
                 ))}
